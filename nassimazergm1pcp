@@ -36,3 +36,17 @@ print("\n")
 moyenne_gc = round(df["Pourcentage GC"].mean(), 3)
 print(f"4) Pourcentage moyen de GC : {moyenne_gc}%")
 print("\n")
+
+# 5) Ajouter une colonne "Catégorie GC"
+def categoriser_gc(pourcentage):
+    if pourcentage > 55:
+        return "Riche"
+    elif pourcentage >= 45:
+        return "Moyen"
+    else:
+        return "Faible"
+
+df["Catégorie GC"] = df["Pourcentage GC"].apply(categoriser_gc)
+print("5) Tableau avec catégorie GC :")
+print(df)
+print("\n")
