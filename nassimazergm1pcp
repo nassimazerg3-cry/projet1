@@ -24,10 +24,11 @@ print("\n")
 # 2) Sélectionner et afficher uniquement la colonne "Longueur"
 print("2) Colonne 'Longueur' :")
 print(df["Longueur"])
+print("\n")
 
 # 3) filtrer les séquences dont la longueur est séperieure à 10 
 longueur_superieur_10 = df[df["Longueur"] > 10] 
 print("3)séquences avec longueur > 10:")
 print(longueur_superieur_10)
 print("\n")
-print("\n")
+
