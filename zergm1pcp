@@ -6,7 +6,6 @@
 #Chikh Rania Ibtissem 
 
 import pandas as pd
-import numpy as np
 
 # 1) Créer et afficher le tableau
 data = {
