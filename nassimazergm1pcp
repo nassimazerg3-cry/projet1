@@ -1,19 +1,12 @@
-#Zerg Nassima ,Master1PCP, Date=13/12/2025
-#Otmani Nardjes
-#Saim mamoune Nadia
-#Benarbia Sara
-#Merdji Narimane
-#Chikh Rania Ibtissem
 
-import pandas as pd
-import numpy as np
+
+import panda as pd
 
 # 1) Créer et afficher le tableau
 data = {
-    "Séquence": ["ATGCGTACGTA", "GCTAGCTAGGCC", "ATGCGCGTAAGT", "TACGATCGTA", 
-                "ATGAAGGGCTT", "CGTACGTAGC", "TTACCCGGAT"],
+    "Séquence": ["ATGCGTACGTA", "GCTAGCTAGGCC", "ATGCGCGTAAGT", "TACGATCGTA", "ATGAAGGGCTT", "CGTACGTAGC", "TTACCCGGAT"],
     "Longueur": [12, 12, 12, 10, 11, 10, 10],
-    "Pourcentage GC": [50, 66.67, 58.33, 40, 45.45, 60, 50]
+    "pourcentage GC": [50, 66.67, 58.33, 40, 45.45, 60, 50]
 }
 
 df = pd.DataFrame(data)
