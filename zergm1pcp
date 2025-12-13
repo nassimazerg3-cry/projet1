@@ -56,3 +56,17 @@ def compter_G(sequence):
 df["Nombre de G"] = df["Séquence"].apply(compter_G)
 print("6) Tableau avec nombre de G :")
 print(df)
+
+# 7) Calculer l'écart-type du %GC et de la longueur des séquences
+ecart_type_gc = round(df["Pourcentage GC"].std(), 4)
+ecart_type_longueur = round(df["Longueur"].std(), 4)
+
+print(f"7) Écart-type du %GC : {ecart_type_gc}")
+print(f"   Écart-type de la longueur : {ecart_type_longueur}")
+print("\n")
+
+# 8) Sauvegarder le tableau final dans un fichier CSV
+df.to_csv("sequences_adn_analyse.csv", index=False, encoding='utf-8')
+print("8) Tableau sauvegardé dans 'sequences_adn_analyse.csv'")
+print("\nTableau final :")
+print(df)
