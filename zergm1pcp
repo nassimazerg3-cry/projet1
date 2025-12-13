@@ -47,3 +47,12 @@ def categoriser_gc(pourcentage):
 df["Catégorie GC"] = df["Pourcentage GC"].apply(categoriser_gc)
 print("5) Tableau avec catégorie GC :")
 print(df)
+
+
+# 6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence
+def compter_G(sequence):
+    return sequence.count('G')
+
+df["Nombre de G"] = df["Séquence"].apply(compter_G)
+print("6) Tableau avec nombre de G :")
+print(df)
